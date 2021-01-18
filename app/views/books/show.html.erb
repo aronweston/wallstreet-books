@@ -1,0 +1,16 @@
+<head>
+    <title><%= @book_title %></title>
+</head>
+
+<h1>Show Book</h1>
+
+<div>
+    <h2><%= @book_title %></h2>
+    <% @authors.each do |i| %>
+        <p><%= i %></p>
+    <% end %> 
+    <p>Total pages: <%= @total_pages %> </p>
+    <p>Published: <%= @date_published %> </p>
+    <p><%= @description %> </p>
+    <img src="<%= @book_cover %>" width="500px"> 
+</div>
